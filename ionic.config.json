@@ -1,0 +1,7 @@
+{
+  "name": "ionic4Total2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
