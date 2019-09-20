@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{caninfo.name}}       
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card> 
+    <ion-card-content> 
+        <p align="center"><img [src]="caninfo.image_url" class="info-img"></p> 
+    </ion-card-content>  
+  </ion-card>      
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>APPLICATION</ion-card-title>      
+    </ion-card-header>
+    <ion-card-content>
+      <p> {{ caninfo.application }}</p>        
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>CUSTOMER BENEFIT</ion-card-title>      
+    </ion-card-header>
+    <ion-card-content>
+      <p> {{ caninfo.customer_benefit }}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>USE ADVICES</ion-card-title>      
+    </ion-card-header>
+    <ion-card-content>
+      <p> {{ caninfo.use_advices }}</p>
+    </ion-card-content>
+  </ion-card>
+    <ion-card>  
+    <ion-card-header>
+      <ion-card-title>DOWNLOAD MOBILE APP</ion-card-title>      
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button  fill="clear" href="https://play.google.com/work?hl=fr">
+        <ion-img src="../../assets/icon/google-play.png"></ion-img>
+      </ion-button>
+      <br>
+      <strong> Please download the new Total mobile app to get rewards</strong>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

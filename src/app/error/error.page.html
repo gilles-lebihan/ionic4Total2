@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>COUNTERFEIT PRODUCT </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>this product has not been recognized by our service as a valid can</ion-card-title>      
+    </ion-card-header>
+    <ion-card-content>
+        <p> Take a photo and send it to us. It will be helpfull in our fight against fraud</p>
+      </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="photo">
+      <ion-card-header>
+        <ion-card-title>PHOTO OF THE COUNTERFEIT PRODUCT</ion-card-title>      
+      </ion-card-header>
+        <ion-card-content class="center">
+            <ion-button (click)="sendImage()">
+                CLICK TO SEND PHOTO TO OUR SUPPORT
+            </ion-button>     
+            <p><br></p>     
+            <img [src]="photo" style="max-width: 100%">
+        </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
